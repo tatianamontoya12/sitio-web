@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos de la cabecera */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width:100%;
+    padding: 40px 0 0 0;
+    padding-bottom: 150px;
+    background: url("../img/FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}
+header nav{
+width: 80%;
+/* height: 400px; */
+/* centrar un contenedor */
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+header nav ul{
+    display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin: 0 15px ;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+}
+nav li a:hover{
+    border-bottom: 2px solid #fff;
+    border-top:2px solid #fff ;
+}
+
+#logo img{
+    transition: .5s;
+}
+#logo img:hover{
+    transform: scale(1.1);
+}
+
+#hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+#hero h1 {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+#hero h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+#hero button{
+  background: rgb(228, 1, 1);
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: #f5fff1; ;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;  
+}
+#hero button:hover{
+    transition: scale(0.9);
+    background: #000;
+}
+
+/* estilos planes */
+main{
+    width: 100%;
+    position: relative;
+}
+/* --------------------------- */
+#planes{
+    width: 100%;
+    background: #dcd6d6;
+    text-align: center;
+    padding-top: 150px ;
+    padding-bottom: 150px;
+
+}
+#planes h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#planes p{
+    font-size: 22px;
+}
+#planes .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly ;
+}
+#planes .col-plan{
+    position: relative;
+}
+#planes .col-plan h3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+    /* z-index: 40; sirve para colocalo atras */
+}
+#planes .col-plan img{
+    transition: .5s;
+}
+#planes .col-plan img:hover{
+    border-radius: 50%;
+}
+
+/* --------------------------------------------- */
+#destinos {
+    width:100%;
+    padding: 40px 0 0 0;
+    padding-bottom: 150px;
+    background: url("../img/river-123926_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.destinos p {
+    margin-bottom: 15px; /* Agrega margen inferior al párrafo */
+}
+#destinos h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 100px;
+}
+#destinos .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#destinos .col-destino h1{
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+#destinos .col-destino img{
+    transition: .5s;
+}
+/* rotacion */
+#destinos .col-destino img:hover{ 
+   border-radius: 25px 25px 0 0 ;
+    width: 100%;
+    height: 250px;
+ }
+
+
+/* ---------------------------------------- */
+#Paquetes{
+    width: 100%;
+    text-align: center;
+    padding-top: 150px ;
+    padding-bottom: 150px;
+}
+
+
+#Paquetes h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#Paquetes p{
+    font-size: 22px;
+}
+#Paquetes .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly ;
+}
+
+
+#Paquetes  .col-Paquetes img{
+    transition: .5s;
+}
+#Paquetes  .col-Paquetes img:hover{
+    border-radius: 50%;
+}
+
+
+/* ---------------------------------------- */
+
+
+
+#vuelos {
+    width: 100%;
+    padding: 40px 0 0 0;
+    padding-bottom: 150px;
+    background: url("../img/vueloss.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+#vuelos h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 100px;
+}
+
+#vuelos p{
+    font-size: 22px;
+}
+#vuelos .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#vuelos .col-vuelos h3{
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#vuelos  .col-vuelos  img{
+    transition: .5s;
+}
+#vuelos  .col-vuelos  img:hover{
+    border-radius: 50%;
+}
+
+/* ---------------------------------------- */
+#gastronomia{
+    width: 100%;
+    padding: 40px 0 0 0;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#gastronomia h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#gastronomia p{
+    font-size: 20px;
+}
+
+#gastronomia .fila{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-evenly;
+}
+
+#gastronomia .col-gastronomia {
+    box-shadow: 0 0 50px rgba(221, 57, 57, 0.2);
+    border-radius: 100px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+#gastronomia .col-gastronomia:hover {
+    transform: translateY(-10px);
+}
+
+#gastronomia .col-gastronomia img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+#gastronomia .col-gastronomia img:hover {
+    border-radius: 500%;
+}
+
+#gastronomia .col-gastronomia h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ---------------------------------------- */
+
+#contacto{
+    width: 100%;
+    position: relative;
+    background: url("../img/PANTALLA\ FONDOO.jpg");
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+#contacto h2{
+    font-size: 50px;
+}
+#contacto p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#contacto form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+#contacto .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#contacto input,
+#contacto select{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+#contacto button{
+    background: #000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 6px 40px;
+    border-radius: 40px;
+    margin-top: 40px;
+    border-color: transparent;
+    
+}
+#hero button{
+  background: rgb(228, 16, 1);
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: #f5fff1; ;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;  
+}
+#hero button:hover{
+    transition: scale(0.9);
+    background: #000;
+}
+
+footer{
+    background: #c25f5f;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+
+
+}
